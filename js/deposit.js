@@ -6,5 +6,24 @@ document.getElementById('btn-deposit').addEventListener('click', function(){
     const inputDepoistAmount = parseFloat(inputDepositString);
     console.log(inputDepoistAmount);
 
+    const depositTotalElement = document.getElementById('deposit-total');
+    const depositTotalString = depositTotalElement.innerText;
+    const depositTotal = parseFloat(depositTotalString);
+    console.log(depositTotal);
+
+    const currentTotalDeposit = depositTotal + inputDepoistAmount;
+    console.log(currentTotalDeposit);
+
+    depositTotalElement.innerText = currentTotalDeposit;
+
+    const balanceTotalElement = document.getElementById('balance-total');
+    const balanceTotalString = balanceTotalElement.innerText;
+    const balanceTotal = parseFloat(balanceTotalString);
+    console.log(balanceTotal);
+
+    const currentBlanceTotal = balanceTotal + inputDepoistAmount;
+
+    balanceTotalElement.innerText = currentBlanceTotal;
+
     inputDeposit.value = '';
 })
