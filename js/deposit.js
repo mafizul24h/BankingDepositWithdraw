@@ -4,22 +4,22 @@ document.getElementById('btn-deposit').addEventListener('click', function(){
     const inputDeposit = document.getElementById('user-deposit');
     let inputDepositString = inputDeposit.value;
     const inputDepoistAmount = parseFloat(inputDepositString);
-    console.log(inputDepoistAmount);
+    // console.log(inputDepoistAmount);
 
     const depositTotalElement = document.getElementById('deposit-total');
     const depositTotalString = depositTotalElement.innerText;
     const depositTotal = parseFloat(depositTotalString);
-    console.log(depositTotal);
+    // console.log(depositTotal);
 
     const currentTotalDeposit = depositTotal + inputDepoistAmount;
-    console.log(currentTotalDeposit);
+    // console.log(currentTotalDeposit);
 
     depositTotalElement.innerText = currentTotalDeposit;
 
     const balanceTotalElement = document.getElementById('balance-total');
     const balanceTotalString = balanceTotalElement.innerText;
     const balanceTotal = parseFloat(balanceTotalString);
-    console.log(balanceTotal);
+    // console.log(balanceTotal);
 
     const currentBlanceTotal = balanceTotal + inputDepoistAmount;
 
