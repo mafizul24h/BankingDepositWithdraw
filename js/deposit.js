@@ -13,6 +13,11 @@ document.getElementById('btn-deposit').addEventListener('click', function(){
         return;
     }
 
+    if(inputDepoistAmount <= 0){
+        alert('Please input positive value');
+        return;
+    }
+
     const depositTotalElement = document.getElementById('deposit-total');
     const depositTotalString = depositTotalElement.innerText;
     const depositTotal = parseFloat(depositTotalString);
